@@ -8,6 +8,12 @@ function App() {
     setText(event.target.value);
   }
 
+  function calculateWordCount() {
+    const wordsArr = text.trim().split(' ');
+    const wordCount = wordsArr[0] === '' ? 0 : wordsArr.length;
+    console.log(wordCount);
+  }
+
   return (
     <>
       <h1>Title</h1>
@@ -17,7 +23,7 @@ function App() {
         onChange={handleChange}
       />
       <h2>Time remaining</h2>
-      <button>Start Game</button>
+      <button onClick={() => calculateWordCount(text)}>Start Game</button>
       <h2>Word count</h2>
     </>
   );
