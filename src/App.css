@@ -31,6 +31,10 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  text-transform: capitalize;
+}
+
 textarea {
   font-family: 'Press Start 2P', cursive;
   border: 3px solid black;
