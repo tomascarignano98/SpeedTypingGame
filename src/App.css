@@ -26,6 +26,13 @@ button {
   text-transform: uppercase;
 }
 
+button:focus {
+  outline: 0;
+  box-shadow: 0px 1px 49px 31px rgba(63, 153, 122, 0.35);
+  -webkit-box-shadow: 0px 1px 49px 31px rgba(63, 153, 122, 0.35);
+  -moz-box-shadow: 0px 1px 49px 31px rgba(63, 153, 122, 0.35);
+}
+
 h1 {
   font-size: 20px;
   text-align: center;
